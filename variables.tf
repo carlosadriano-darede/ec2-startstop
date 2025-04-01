@@ -21,12 +21,12 @@ variable "stopstart_tags" {
 
 variable "stop_cron_schedule" {
   description = "Cron Expression when to STOP Servers in UTC Time zone"
-  default     = "cron(25 08 ? * MON-FRI *)"
+  default     = "cron(28 08 ? * MON-FRI *)"
 }
 
 variable "start_cron_schedule" {
   description = "Cron Expression when to START Servers in UTC Time zone"
-  default     = "cron(27 08 ? * MON-FRI *)"
+  default     = "cron(30 08 ? * MON-FRI *)"
 }
 
 variable "company" {
@@ -58,7 +58,7 @@ variable "darede_tags" {
   description = "Enable STOP/START for EC2 Instances with the following tag"
   default = {
     TagKEY   = "env"
-    TagVALUE = "prd"
+    TagVALUE = "hml"
   }
 }
 
