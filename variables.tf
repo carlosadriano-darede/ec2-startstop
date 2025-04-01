@@ -21,12 +21,12 @@ variable "stopstart_tags" {
 
 variable "stop_cron_schedule" {
   description = "Cron Expression when to STOP Servers in UTC Time zone"
-  default     = "cron(28 08 ? * MON-FRI *)"
+  default     = "cron(32 08 ? * MON-FRI *)"
 }
 
 variable "start_cron_schedule" {
   description = "Cron Expression when to START Servers in UTC Time zone"
-  default     = "cron(30 08 ? * MON-FRI *)"
+  default     = "cron(34 08 ? * MON-FRI *)"
 }
 
 variable "company" {
