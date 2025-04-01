@@ -13,3 +13,11 @@ terraform {
 provider "aws" {
   region = var.aws_region
 }
+
+terraform {
+  backend "s3" {
+    bucket = "bkt01042025"
+    key    = "terraform/ec2-startstop"
+    region = "us-east-1"
+  }
+}
