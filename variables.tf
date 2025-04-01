@@ -58,7 +58,7 @@ variable "darede_tags" {
   description = "Enable STOP/START for EC2 Instances with the following tag"
   default = {
     TagKEY   = "env"
-    TagVALUE = "hml"
+    TagVALUE = "prd"
   }
 }
 
