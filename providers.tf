@@ -16,7 +16,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "bkt01042025"
+    bucket = "bkt03042025"
     key    = "terraform/ec2-startstop"
     region = "us-east-1"
   }
